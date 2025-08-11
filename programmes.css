@@ -2,8 +2,8 @@ body {
   background-color: #e9e9e9cb;
   margin: 0;
   padding: 0;
-  background-size: 100% 100%;
 }
+
 nav {
   background-color: #d9d9d975;
   display: flex;
@@ -16,6 +16,7 @@ nav {
   border-bottom-right-radius: 10px;
   backdrop-filter: blur(3px);
 }
+
 .logo {
   height: 50px;
   display: flex;
@@ -23,38 +24,44 @@ nav {
   border-left: 3px solid #353535;
   padding-left: 10px;
 }
-.logo-dark {
+
+#logo1 {
   font-family: 'Fira Sans', sans-serif;
   color: #353535;
-  margin: 0;
 }
-.logo-light {
+
+#logo {
   font-family: 'Fira Sans', sans-serif;
   color: #ffebc1;
-  margin: 0 0 0 5px;
 }
+
 .nav1 {
   display: flex;
   gap: 20px;
 }
+
 .signup {
   display: flex;
   gap: 20px;
 }
+
 a {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 500;
   color: #fff9ec;
   text-decoration: none;
 }
+
 a:hover {
-  color: #353535;
+  color: #ffae00;
   text-decoration: underline;
 }
+
 .all-content {
   display: grid;
   gap: 0;
 }
+
 .main-section1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -70,12 +77,11 @@ a:hover {
   box-shadow: 0 0 10px gray;
   height: 800px;
 }
+
 .section1 {
-  gap: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-items: start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .h1button {
   display: flex;
@@ -88,10 +94,11 @@ a:hover {
   border-radius: 20px;
   backdrop-filter: blur(3px);
 }
+
 button {
   height: 50px;
   width: 200px;
-  color: #000000;
+  color: #ffebc1;
   font-weight: bolder;
   font-size: large;
   font-family: 'Fira Code', monospace;
@@ -101,28 +108,31 @@ button {
   backdrop-filter: blur(3px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 button:hover {
-  color: #ffebc1;
+  color: #ffae00;
   background-color: #d9d9d9cd;
   cursor: pointer;
   transform: scale(1.05);
 }
+
 .quote-icon {
   width: 20px;
-  vertical-align: middle;
 }
+
 .quote-text {
-  padding: 10px 10px 10px 20px;
+  padding: 10px;
+  padding-left: 20px;
   border-left: 3px solid #353535;
   font-family: 'Fira Code', monospace;
   color: #fff9ec;
   font-weight: 700;
   font-size: large;
-  margin: 0;
 }
+
 h1 {
   font-family: 'Fira Sans', sans-serif;
-  color: #ffebc1;
+  color: #ffae00;
 }
 .main-section2 {
   display: flex;
@@ -171,8 +181,16 @@ textarea {
   font-family: 'Fira Code', monospace;
   border-radius: 7px;
   border: none;
-  height: 55px;
+  height: 65px;
   width: 230px;
+  color: #353535
+  ;
+}
+#btn:hover{
+    color: #ffae00;
+}
+h3{
+     font-family: 'Fira Sans', monospace;
 }
 .submit-button {
   display: flex;
@@ -203,6 +221,10 @@ textarea {
   padding: 15px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .card-item:hover {
   transform: scale(1.05);
@@ -215,6 +237,7 @@ textarea {
   font-size: 1.5rem;
   padding: 5px;
   transition: color 0.3s ease;
+margin-top: auto;
 }
 .card-item button:hover {
   transform: scale(1.2);
@@ -230,6 +253,14 @@ textarea {
   font-style: italic;
   color: #353535;
 }
+
+.menu{
+    display: none;
+    font-size: 1.5rem;
+    color: #fff9ec;
+    cursor: pointer;
+}
+
 footer {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -332,21 +363,24 @@ footer {
 }
 
 
-@media screen and (max-width: 1199px) and (min-width: 769px) {
+  @media screen and (max-width: 1199px) {
   nav {
     width: 90%;
     max-width: 800px;
   }
+
   .main-section1 {
     height: auto;
     min-height: 600px;
     padding: 20px;
   }
+
   .section1 {
     gap: 100px;
     flex-direction: column;
     text-align: center;
   }
+
   .h1button {
     width: 90%;
     max-width: 600px;
@@ -354,264 +388,118 @@ footer {
   }
   .main-section2 {
     flex-direction: column;
+    align-items: center;
     height: auto;
-    padding: 20px;
-    gap: 30px;
+    width: 100%;
   }
-  .contact,
-  .form,
-  form {
+
+  .form {
     width: 90%;
-    max-width: 500px;
   }
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-  }
+
   .section3 {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 15px;
-  }
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  nav {
+
+@media screen and (max-width: 768px) {
+      .signup{
+display: none;
+  }
+
+.signup.active{
+    display: flex;
+}
+
+  .nav1{
+    display: none;
+}
+
+   .nav1.active{
+    display: flex;
+  }
+    .menu{
+    display: block
+}
+    nav {
     width: 95%;
     padding: 15px;
     height: auto;
     flex-direction: column;
     gap: 15px;
   }
+
   .nav1 {
     flex-direction: column;
     gap: 10px;
     text-align: center;
   }
+
   .signup {
     flex-direction: column;
     gap: 10px;
   }
+
   .main-section1 {
+
     height: auto;
     min-height: 500px;
     padding: 15px;
     gap: 30px;
+    width: 100;
   }
+
   .section1 {
     gap: 50px;
     flex-direction: column;
     padding: 0 10px;
   }
+
   .h1button {
     width: 95%;
     padding: 15px;
     margin: 15px auto;
   }
+
   h1 {
     font-size: 1.5em;
     text-align: center;
   }
-  .quote-text {
-    font-size: medium;
-    padding: 8px 8px 8px 15px;
-  }
-  button {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-  }
-  .main-section2 {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-    margin-top: 20px;
-    gap: 20px;
-  }
-  .contact,
-  .form,
-  form {
-    width: 95%;
-    padding: 15px;
-  }
-  #image-url {
-    width: 100%;
-    max-width: 300px;
-  }
-  #btn {
-    width: 100%;
-    max-width: 200px;
-  }
-  .submit-button {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .cards {
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 15px;
-  }
-  .section3 {
-    grid-template-columns: 1fr;
-    padding: 10px;
-    gap: 15px;
-  }
-  .card-item {
-    padding: 12px;
-  }
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 15px;
-    text-align: center;
-  }
-  .social-links {
-    justify-content: center;
-  }
-}
 
-@media screen and (max-width: 480px) {
-  nav {
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 10px;
+  #p1 {
+    font-size: medium;
+    padding: 8px;
+    padding-left: 15px;
   }
-  .logo {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  .nav1,
-  .signup {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
-  .main-section1 {
-    height: auto;
-    min-height: 400px;
-    padding: 10px;
-    gap: 20px;
-  }
-  .section1 {
-    gap: 30px;
-    flex-direction: column;
-    padding: 0 5px;
-  }
-  .h1button {
-    width: 98%;
-    padding: 12px;
-    margin: 10px auto;
-  }
-  h1 {
-    font-size: 1.3em;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .quote-text {
-    font-size: small;
-    padding: 6px 6px 6px 12px;
-    line-height: 1.4;
-  }
-  .quote-icon {
-    width: 15px;
-  }
+
   button {
     width: 100%;
-    max-width: 180px;
+    max-width: 200px;
     margin: 0 auto;
-    padding: 8px;
-    font-size: medium;
   }
+
   .main-section2 {
     flex-direction: column;
+    padding: 20px;
     height: auto;
-    padding: 10px;
-    margin-top: 15px;
-    gap: 15px;
   }
-  .contact,
-  .form,
-  form {
-    width: 98%;
-    padding: 12px;
-  }
-  label {
-    font-size: medium;
-  }
-  input,
-  textarea {
-    padding: 8px;
-    font-size: small;
-  }
-  input {
-    height: 40px;
-  }
-  textarea {
-    height: 80px;
-  }
-  #image-url {
+
+  .form {
     width: 100%;
-    height: 35px;
   }
-  #btn {
-    width: 100%;
-    height: 45px;
-    font-size: small;
-  }
-  .submit-button {
-    flex-direction: column;
-    gap: 8px;
-  }
-  .cards,
+
   .section3 {
+    width: 100%;
     grid-template-columns: 1fr;
-    padding: 8px;
-    gap: 12px;
   }
-  .card-item {
-    padding: 10px;
-  }
-  .card-item h3 {
-    font-size: 1em;
-  }
-  .card-item p {
-    font-size: 0.9em;
-  }
-  .card-item button {
-    font-size: 1.2rem;
-  }
-  li {
-    font-size: medium;
-    line-height: 1.6;
-  }
+
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 0 10px;
     text-align: center;
   }
-  .footer-section h3 {
-    font-size: 1em;
-  }
-  .footer-section p,
-  .footer-section ul li a {
-    font-size: 0.9em;
-  }
+
   .social-links {
     justify-content: center;
-    gap: 12px;
-  }
-  .social-links a {
-    font-size: 1.3em;
-  }
-  .contact-info p {
-    font-size: 0.8em;
-    text-align: left;
-  }
-  .footer-bottom p {
-    font-size: 0.8em;
-    padding: 0 5px;
   }
 }

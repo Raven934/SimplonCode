@@ -2,7 +2,6 @@ body {
   background-color: #e9e9e9cb;
   margin: 0;
   padding: 0;
-  background-size: 100% 100%;
 }
 
 nav {
@@ -54,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: #353535;
+  color: #ffae00;
   text-decoration: underline;
 }
 
@@ -80,13 +79,10 @@ a:hover {
 }
 
 .section1 {
-  gap: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-items: start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-
 .h1button {
   display: flex;
   flex-direction: column;
@@ -102,7 +98,7 @@ a:hover {
 button {
   height: 50px;
   width: 200px;
-  color: #000000;
+  color: #ffebc1;
   font-weight: bolder;
   font-size: large;
   font-family: 'Fira Code', monospace;
@@ -114,7 +110,7 @@ button {
 }
 
 button:hover {
-  color: #ffebc1;
+  color: #ffae00;
   background-color: #d9d9d9cd;
   cursor: pointer;
   transform: scale(1.05);
@@ -136,7 +132,7 @@ button:hover {
 
 h1 {
   font-family: 'Fira Sans', sans-serif;
-  color: #ffebc1;
+  color: #ffae00;
 }
 
 .main-section2 {
@@ -217,6 +213,16 @@ h1 {
   color: #fff9ec;
   font-weight: 300;
   font-size: medium;
+}
+h3{
+     font-family: 'Fira C', monospace;
+}
+
+.menu{
+    display: none;
+    font-size: 1.5rem;
+    color: #fff9ec;
+    cursor: pointer;
 }
 
 footer {
@@ -400,7 +406,25 @@ footer {
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  nav {
+  .signup{
+display: none;
+  }
+
+.signup.active{
+    display: flex;
+}
+
+  .nav1{
+    display: none;
+}
+
+   .nav1.active{
+    display: flex;
+  }
+    .menu{
+    display: block
+}
+    nav {
     width: 95%;
     padding: 15px;
     height: auto;
@@ -510,148 +534,3 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
-  nav {
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  .nav1,
-  .signup {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
-  }
-
-  .main-section1 {
-    height: auto;
-    min-height: 400px;
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .section1 {
-    gap: 30px;
-    flex-direction: column;
-    padding: 0 5px;
-  }
-
-  .h1button {
-    width: 98%;
-    padding: 12px;
-    margin: 10px auto;
-  }
-
-  h1 {
-    font-size: 1.3em;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  #p1 {
-    font-size: small;
-    padding: 6px;
-    padding-left: 12px;
-    line-height: 1.4;
-  }
-
-  #quote {
-    width: 15px;
-  }
-
-  button {
-    width: 100%;
-    max-width: 180px;
-    margin: 0 auto;
-    padding: 8px;
-    font-size: medium;
-  }
-
-  .main-section2 {
-    width: 98%;
-    padding: 8px;
-  }
-
-  .img {
-    width: 100%;
-  }
-
-  #img2 {
-    width: 100%;
-    height: auto;
-    min-height: 200px;
-  }
-
-  .section2 {
-    width: 98%;
-    height: auto;
-    min-height: 200px;
-    padding: 10px;
-    margin: -30px auto 0;
-    font-size: small;
-  }
-
-  .main-section3 {
-    grid-template-columns: 1fr;
-    padding: 8px;
-    gap: 12px;
-    margin-top: 15px;
-  }
-
-  .card {
-    padding: 12px;
-  }
-
-  .card-title {
-    font-size: 1.1em;
-    margin-bottom: 8px;
-  }
-
-  #p3 {
-    font-size: 0.8em;
-    padding: 0 3px;
-    line-height: 1.4;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .footer-section h3 {
-    font-size: 1em;
-  }
-
-  .footer-section p,
-  .footer-section ul li a {
-    font-size: 0.9em;
-  }
-
-  .social-links {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .social-links a {
-    font-size: 1.3em;
-  }
-
-  .contact-info p {
-    font-size: 0.8em;
-    text-align: left;
-  }
-
-  .footer-bottom p {
-    font-size: 0.8em;
-    padding: 0 5px;
-  }
-}

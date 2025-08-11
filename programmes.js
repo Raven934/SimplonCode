@@ -4,6 +4,16 @@ const desc = document.getElementById("desc");
 const duration = document.getElementById("duration");
 const url = document.getElementById("image-url");
 const form = document.querySelector(".form");
+const menu=document.querySelector(".menu")
+const nav1=document.querySelector(".nav1")
+const signup=document.querySelector(".signup")
+
+
+menu.addEventListener("click", ()=>{
+    nav1.classList.toggle("active");
+    signup.classList.toggle("active");
+
+})
 
 function displayCards() {
   axios.get("http://localhost:4000/programmes")
