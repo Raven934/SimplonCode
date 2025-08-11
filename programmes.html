@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimplonCode - Programs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="programmes.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="all-content">
+      <section class="main-section1">
+        <nav>
+          <div class="logo">
+            <h2 class="logo-dark">Simplon</h2>
+            <h2 class="logo-light">Code.</h2>
+          </div>
+          <div class="nav1">
+            <a href="home.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="programmes.html">Programs</a>
+          </div>
+          <div class="signup">
+            <a href="signup.html">Sign up</a>
+            <a href="signin.html">Sign in</a>
+          </div>
+        </nav>
+
+        <div class="section1">
+          <div class="h1button">
+            <h1>Take your First Step NOW!</h1>
+            <p class="quote-text">
+              <img class="quote-icon" src="25672.png" alt="quote" />
+              Every great journey begins with a single step, and at SimplonCode,
+              that step starts with you. Whether you’re curious about our
+              programmes, eager to build new skills, or ready to take your career
+              to the next level, we’re here to listen, guide, and support you every
+              step of the way. Your passion and ideas inspire us, and together, we
+              can turn your ambitions into real-world success. Don’t wait any
+              longer—apply now and join a vibrant community of learners and
+              innovators at SimplonCode. Your future in tech begins today!
+            </p>
+          </div>
+          <button class="apply">Apply Now</button>
+        </div>
+      </section>
+
+      <section class="main-section2">
+        <form class="form" id="program-form">
+          <label for="title">Program's name:</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="Program's name..."
+            name="programName"
+            required
+          />
+
+          <label for="duration">Duration:</label>
+          <input
+            type="text"
+            id="duration"
+            placeholder="Program's duration..."
+            name="duration"
+            required
+          />
+
+          <label for="desc">Program's description:</label>
+          <textarea
+            id="desc"
+            placeholder="Program's description..."
+            name="description"
+            required
+          ></textarea>
+
+          <div class="submit-button">
+            <input
+              type="url"
+              id="image-url"
+              placeholder="Image URL..."
+              name="imageUrl"
+              required
+            />
+            <button type="submit" id="btn">Add</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="section3">
+        <div class="cards"></div>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>SimplonCode</h3>
+            <p>
+              Empowering the next generation of developers through hands-on
+              learning and innovation.
+            </p>
+            <div class="social-links">
+              <a href="facebook"><i class="fab fa-facebook"></i></a>
+              <a href="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="linkedin"><i class="fab fa-linkedin"></i></a>
+              <a href="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="programmes.html">Programs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Programs</h3>
+            <ul>
+              <li><a href="web.html">Web Development</a></li>
+              <li><a href="data.html">Data Science</a></li>
+              <li><a href="mobile.html">Mobile Development</a></li>
+              <li><a href="dev.html">DevOps</a></li>
+              <li><a href="ai.html">AI & Machine Learning</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="contact-info">
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Situé au 109, boulevard
+                Abdelmoumen, 20042 Casablanca.
+              </p>
+              <p><i class="fas fa-phone"></i> +212 6567839878</p>
+              <p><i class="fas fa-envelope"></i> info@simploncode.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 SimplonCode. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="programmes.js"></script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+body {
+  background-color: #e9e9e9cb;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+  background-color: #d9d9d975;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 30px;
+  width: 900px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid #353535;
+  padding-left: 10px;
+}
+
+#logo1 {
+  color: #353535;
+}
+
+#logo {
+  color: #ffebc1;
+}
+
+.nav1,
+.signup {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  font-weight: 500;
+  color: #fff9ec;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #353535;
+  text-decoration: underline;
+}
+
+.all-content {
+  display: grid;
+  gap: 0;
+}
+
+.main-section1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 50px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(plNsBr9.png) no-repeat center center/cover;
+  box-shadow: 0 0 10px gray;
+  height: 800px;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+.h1button {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 20px 0 30px;
+  background-color: #d9d9d975;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+}
+
+.intro-text {
+  padding: 10px 0 10px 20px;
+  border-left: 3px solid #353535;
+  font-family: 'Fira Code', monospace;
+  color: #fff9ec;
+  font-weight: 700;
+  font-size: large;
+}
+
+#quote {
+  width: 20px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  color: #000;
+  font-weight: bolder;
+  font-size: large;
+  font-family: 'Fira Code', monospace;
+  border: none;
+  border-radius: 10px;
+  background-color: #d9d9d975;
+  backdrop-filter: blur(3px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  color: #ffebc1;
+  background-color: #d9d9d9cd;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.main-section2 {
+  display: flex;
+  margin-top: 40px;
+  padding: 40px;
+  height: 650px;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+.contact {
+  background-color: #35353597;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.77);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+  transform: scale(1.05);
+}
+
+.contact ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact ul li {
+  color: #ffebc1;
+  font-family: 'Fira Code', monospace;
+  font-size: large;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+#location-s {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#location-s:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+form.contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 600px;
+}
+
+label {
+  color: #353535;
+  font-size: larger;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Fira Code', monospace;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(plNsBr9.png) no-repeat center center/cover;
+  background-size: 100% 100%;
+  color: #fff9ec;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  color: #ffebc1;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #353535;
+  padding-bottom: 8px;
+}
+
+.footer-section p,
+.footer-section ul li a {
+  font-family: 'Fira Code', monospace;
+  color: #fff9ec;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffebc1;
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: #fff9ec;
+  font-size: 1.5em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffebc1;
+  transform: scale(1.2);
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: 'Fira Code', monospace;
+  color: #fff9ec;
+  font-weight: 300;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #ffebc1;
+  width: 20px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #353535;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-family: 'Fira Code', monospace;
+  color: #fff9ec;
+  font-weight: 300;
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: #ffebc1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #fff9ec;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+  nav {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .main-section1 {
+    height: auto;
+    min-height: 600px;
+    padding: 20px;
+  }
+
+  .section1 {
+    gap: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .h1button {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .main-section2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .contact,
+  form.contactus {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  nav {
+    width: 95%;
+    padding: 15px;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav1 {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .signup {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-section1 {
+    height: auto;
+    min-height: 500px;
+    padding: 15px;
+    gap: 30px;
+  }
+
+  .section1 {
+    gap: 50px;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .h1button {
+    width: 95%;
+    padding: 15px;
+    margin: 15px auto;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: medium;
+    padding: 8px;
+    padding-left: 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .main-section2 {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact,
+  form.contactus {
+    width: 95%;
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 8px;
+    height: 80px;
+  }
+
+  label {
+    font-size: medium;
+  }
+
+  .contact ul li {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav1,
+  .signup {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .main-section1 {
+    height: auto;
+    min-height: 400px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .section1 {
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+
+  .h1button {
+    width: 98%;
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+    h1 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .intro-text {
+    font-size: small;
+    padding: 6px;
+    padding-left: 12px;
+    line-height: 1.4;
+  }
+
+  #quote {
+    width: 15px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    padding: 8px;
+    font-size: medium;
+  }
+
+  .main-section2 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .contact,
+  form.contactus {
+    width: 98%;
+    padding: 12px;
+  }
+
+  label {
+    font-size: small;
+  }
+
+  input {
+    width: 100%;
+    padding: 6px;
+    height: 35px;
+    font-size: small;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 6px;
+    height: 70px;
+    font-size: small;
+  }
+
+  .contact ul li {
+    font-size: small;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 5px;
+  }
+
+  #location-s {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 1em;
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.9em;
+  }
+
+  .social-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .social-links a {
+    font-size: 1.3em;
+  }
+
+  .contact-info p {
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8em;
+    padding: 0 5px;
+  }
+}
+
