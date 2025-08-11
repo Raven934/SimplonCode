@@ -533,4 +533,4 @@ display: none;
     justify-content: center;
   }
 }
-
+.main-section1, footer { background-size: cover; background-position: center; }

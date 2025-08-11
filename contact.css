@@ -477,6 +477,7 @@ display: none;
     margin: 0 auto;
   }
 
+
   .main-section2 {
     flex-direction: column;
     height: auto;
@@ -523,3 +524,4 @@ display: none;
     justify-content: center;
   }
 }
+.main-section1, footer { background-size: cover; background-position: center; }
