@@ -62,12 +62,13 @@ a:hover {
   grid-template-columns: 1fr;
   justify-content: space-between;
   justify-items: center;
-  gap: 50px;
+  align-items: start;
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ),
     url(plNsBr9.png) no-repeat center center/cover;
+  background-size: 100% 100%;
   box-shadow: 0 0 10px gray;
   height: 800px;
 }

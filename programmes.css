@@ -60,7 +60,7 @@ a:hover {
   grid-template-columns: 1fr;
   justify-content: space-between;
   justify-items: center;
-  gap: 50px;
+  align-items: start;
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
@@ -184,7 +184,6 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
   width: 100%;
 }
 .section3 {
@@ -193,6 +192,8 @@ textarea {
   gap: 20px;
   padding: 20px;
   border-radius: 12px;
+      width: 1400px;
+    margin: auto;
 }
 .card-item {
   background-color: white;
