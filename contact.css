@@ -176,14 +176,19 @@ h3{
   line-height: 1.8;
   margin-bottom: 8px;
 }
-
-#location-s {
+.maps{
+  height: 450px;
+  width: 600px;
+}
+iframe{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  width: 100%;
 }
 
-#location-s:hover {
+iframe:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
@@ -392,7 +397,7 @@ footer {
     width: 90%;
     max-width: 500px;
   }
-  #location-s{
+  iframe{
     width: 500px;
   }
 
